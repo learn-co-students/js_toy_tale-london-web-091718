@@ -61,12 +61,8 @@ toyForm.addEventListener('submit', event => {
   }
 
   createToys(toy)
-    .then(toy => displayToy(toy))
-    .then()
-
-  getToys()
-    .then(toys => {
-      localToys = toys
+    .then(toy => {
+      renderToys()
       inputValues[0].value = ``
       inputValues[1].value = ``
     })
