@@ -15,5 +15,4 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-
 // OR HERE!
