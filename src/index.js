@@ -18,8 +18,6 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-// OR HERE!
-
 // Function to display a single toy
 const displayToy = toy => {
   const toyItem = document.createElement('div')
@@ -31,7 +29,6 @@ const displayToy = toy => {
   <p>${toy.likes}</p>
   <button class="like-btn">Like <3</button>
   `
-
   toyDisplay.appendChild(toyItem)
 }
 
@@ -68,6 +65,7 @@ toyForm.addEventListener('submit', event => {
     })
 })
 
+// Listen to likes button click, update local toy and send patch request to server
 document.addEventListener('click', event => {
   if (event.target.className === 'like-btn') {
     let targetBtn = event.target
