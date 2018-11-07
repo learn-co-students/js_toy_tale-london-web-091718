@@ -2,7 +2,7 @@ const getToys = () =>
   fetch('http://localhost:3000/toys')
     .then(resp => resp.json())
 
-const createToys = (toy) =>
+const createToy = (toy) =>
   fetch('http://localhost:3000/toys', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

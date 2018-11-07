@@ -71,6 +71,12 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Snoopy_Peanuts.png/200px-Snoopy_Peanuts.png",
       "likes": 20,
       "id": 12
+    },
+    {
+      "name": "Ball",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/220px-Basketball.png",
+      "likes": 27,
+      "id": 13
     }
   ]
 }
