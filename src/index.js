@@ -24,7 +24,7 @@ function renderToys(toy) {
   toyDiv.innerHTML = `
   <h2>${toy.name}</h2>
   <img src='${toy.image}' class="toy-avatar" />
-  <p class="likes">${toy.likes} Likes </p>
+  <p class="likes-${toy.id}">${toy.likes} Likes </p>
   <button class="like-btn-${toy.id}">Like <3</button>
   `
 
@@ -33,7 +33,7 @@ function renderToys(toy) {
   //update toy likes
 
   let likeButton = toyCollection.querySelector(`.like-btn-${toy.id}`)
-  let likes = toyCollection.querySelector(`.likes`)
+  let likes = toyCollection.querySelector(`.likes-${toy.id}`)
 
   likeButton.addEventListener('click', event => {
     event.preventDefault
@@ -43,7 +43,6 @@ function renderToys(toy) {
   })
 
 }
-
 
 
 addBtn.addEventListener('click', () => {
