@@ -11,7 +11,7 @@ const addNewToy = toy =>
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(toy)
-    })
+    }).then(resp => resp.json())
 
 const updateToy = toy =>
     fetch(baseURL + `/${toy.id}`, {
@@ -20,5 +20,5 @@ const updateToy = toy =>
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(toy)
-    })
-    
+    }).then(resp => resp.json())
+

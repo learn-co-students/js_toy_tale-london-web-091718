@@ -13,6 +13,7 @@ let state = {
 
 // render a toy to page 
 const renderToy = toy => {
+  console.log('renderToy toy', toy)
   const toyEl = document.createElement('div')
   const likeString = toy.likes === 1 ? `${toy.likes} Like` : `${toy.likes} Likes`
   toyEl.className = 'card'
@@ -54,7 +55,7 @@ document.addEventListener('click', event => {
     const likeText = document.querySelector(`p[data-id='${id}']`)
     const likedToy = updateToyLikes(foundToy)
     likeText.innerText = likedToy.likes === 1 ? `${likedToy.likes} Like` : `${likedToy.likes} Likes`
-    updateToy(foundToy)
+    updateToy(likedToy)
   }
 })
 
@@ -74,8 +75,11 @@ submitButton.addEventListener('click', event => {
   }
 
   addNewToy(toy)
-    .then(toy => renderToy(toy))
-
+    .then((toy) => {
+      state.toys.push(toy)
+      renderToy(toy)
+    })
+  
   toyNameInput.value = ''
   toyImageInput.value = ''
 })
