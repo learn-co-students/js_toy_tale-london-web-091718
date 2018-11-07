@@ -18,7 +18,7 @@ body {
 }
 
 #toy-collection {
-  margin: 2rem;
+  margin: 0 auto;
 }
 
 .card {
@@ -47,7 +47,7 @@ button {
   width: max-content;
   color: whitesmoke;
   font-size: 18px;
-  justify-self: center;
+  /* justify-self: center; */
 }
 
 button:hover {
