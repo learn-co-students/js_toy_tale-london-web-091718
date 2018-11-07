@@ -8,6 +8,8 @@ let addToy = false
 
 // YOUR CODE HERE
 
+
+
 const state = {
   toys: []
 }
@@ -15,12 +17,13 @@ const state = {
 const renderToy = toy => {
   const toyItem = document.createElement('div')
   toyItem.className = 'card'
+  toyItem.dataset.id = `${toy.id}`
   toyItem.innerHTML =
-  `<h2>${toy.name}</h2>
-  <img src='${toy.image}' class='toy-avatar' />
-  <p data-id='${toy.id}'>${toy.likes}</p>
-  <button data-id='${toy.id}' class='like-btn'>Like &#9829;</button>
-  <button data-id='${toy.id}' class='trash-btn'></button>`
+    `<h2>${toy.name}</h2>
+    <img src='${toy.image}' class='toy-avatar' />
+    <p data-id='${toy.id}'>${toy.likes}</p>
+    <button data-id='${toy.id}' class='like-btn'>Like &#9829;</button>
+    <button data-id='${toy.id}' class='trash-btn' id='trash-btn'>X</button>`
   toyCollection.appendChild(toyItem)
 }
 
@@ -55,10 +58,6 @@ const findToy = id => {
   return state.toys.find(toy => toy.id === parseInt(id))
 }
 
-// const updateLikeBtn = toy => {
-//   toy.likes.innerHTML = toy.likes += 1
-// }
-
 
 addBtn.addEventListener('click', () => {
   // hide & seek with the form
@@ -72,14 +71,24 @@ addBtn.addEventListener('click', () => {
   }
 })
 
+const likeToy = (toy, likesEl) => {
+  likesEl.innerText = `${toy.likes += 1}`
+  updateToyLikes(toy)
+}
+
 document.addEventListener('click', event => {
   if(event.target.className === 'like-btn') {
-    const id = event.target.dataset.id
-    const likesOnPage = document.querySelector(`p[data-id='${id}']`)
-    const foundToy = findToy(id)
-    likesOnPage.innerText = `${foundToy.likes += 1}`
-    updateToyLikes(foundToy)
+    likeToy(findToy(event.target.dataset.id), document.querySelector(`p[data-id='${event.target.dataset.id}']`))
   }
+
+  if(event.target.className === 'trash-btn') {
+    const deleteToyById = event.target.dataset.id
+    const toyCard = document.querySelector(`div[data-id='${deleteToyById}']`)
+    const foundToyToDelete = findToy(deleteToyById)
+    toyCard.remove()
+    deleteToy(foundToyToDelete)
+  }
+
 })
 
 
