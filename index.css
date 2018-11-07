@@ -19,6 +19,8 @@ body {
 
 #toy-collection {
   margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -26,8 +28,8 @@ body {
   border: grey solid 1px;
   padding: 1rem;
   width: 15rem;
-  height: 25rem;
-  display: inline-grid;
+  height: 22rem;
+  display: block;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #e04b52
 }
@@ -47,7 +49,7 @@ button {
   width: max-content;
   color: whitesmoke;
   font-size: 18px;
-  justify-self: center;
+  justify-self: left;
 }
 
 button:hover {
@@ -66,7 +68,8 @@ button:hover {
 }
 
 .add-toy-form {
-  width: 80%
+  width: 80%;
+  margin: 0 auto;
 }
 
 .submit {
@@ -96,4 +99,12 @@ button:hover {
   font-size: 18px;
   font-family: monospace;
   margin: 3px;
+}
+
+.like-btn {
+  float: left;
+}
+
+#trash-btn {
+  float: right;
 }
