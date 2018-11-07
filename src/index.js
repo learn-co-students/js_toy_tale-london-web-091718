@@ -18,8 +18,9 @@ const renderToy = toy => {
   toyItem.innerHTML =
   `<h2>${toy.name}</h2>
   <img src='${toy.image}' class='toy-avatar' />
-  <p>${toy.likes}</p>
-  <button class='like-btn'>Like &#9829;</button>`
+  <p data-id='${toy.id}'>${toy.likes}</p>
+  <button data-id='${toy.id}' class='like-btn'>Like &#9829;</button>
+  <button data-id='${toy.id}' class='trash-btn'></button>`
   toyCollection.appendChild(toyItem)
 }
 
@@ -50,6 +51,14 @@ const newToyEvenetListener = () => {
   })
 }
 
+const findToy = id => {
+  return state.toys.find(toy => toy.id === parseInt(id))
+}
+
+// const updateLikeBtn = toy => {
+//   toy.likes.innerHTML = toy.likes += 1
+// }
+
 
 addBtn.addEventListener('click', () => {
   // hide & seek with the form
@@ -60,6 +69,16 @@ addBtn.addEventListener('click', () => {
     newToyEvenetListener()
     } else {
     toyForm.style.display = 'none'
+  }
+})
+
+document.addEventListener('click', event => {
+  if(event.target.className === 'like-btn') {
+    const id = event.target.dataset.id
+    const likesOnPage = document.querySelector(`p[data-id='${id}']`)
+    const foundToy = findToy(id)
+    likesOnPage.innerText = `${foundToy.likes += 1}`
+    updateToyLikes(foundToy)
   }
 })
 
