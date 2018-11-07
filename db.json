@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 33
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 13
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 10
     },
     {
       "id": 4,
@@ -47,6 +47,36 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Amalie",
+      "image": "data:image/png;base64,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",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Barney",
+      "image": "",
+      "likes": 9,
+      "id": 10
+    },
+    {
+      "name": "AMALIE",
+      "image": "",
+      "likes": 5,
+      "id": 11
+    },
+    {
+      "name": "amalie",
+      "image": "",
+      "likes": 8,
+      "id": 12
+    },
+    {
+      "name": "BARNPOO",
+      "image": "",
+      "likes": 0,
+      "id": 13
     }
   ]
 }
