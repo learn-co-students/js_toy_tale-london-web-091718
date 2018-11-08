@@ -32,9 +32,9 @@ toyElement.innerHTML = `
 
 
 const likeButton = toyElement.querySelector('.like-btn')
-likeButton.addEventListener('click', event => { 
+likeButton.addEventListener('click',() => { 
   likeToy(toyObject)
-  const likeNum=toyElement.querySelector('#like-number')
+  const likeNum = toyElement.querySelector('#like-number')
   likeNum.innerText = `Likes: ${toyObject.likes}`
 })
 
@@ -74,7 +74,7 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-toyForm.addEventListener('submit', event => {
+toyForm.addEventListener('submit', () => {
   const toyName = document.querySelector('#nameruni').value
   const toyImage = document.querySelector('#imageruni').value
   let toyObject = {name: toyName, image: toyImage, likes: 0}
