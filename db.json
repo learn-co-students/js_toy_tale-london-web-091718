@@ -4,49 +4,97 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 6
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 9
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 4
     },
     {
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 5,
       "name": "Rex",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 6,
       "name": "Bo Peep",
       "image": "http://4.bp.blogspot.com/_OZHbJ8c71OM/Sog43CMFX2I/AAAAAAAADEs/0AKX0XslD4g/s400/bo.png",
-      "likes": 2
+      "likes": 3
     },
     {
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": -1
+    },
+    {
+      "name": "Olly",
+      "image": "https://vignette.wikia.nocookie.net/pixar/images/9/9d/Sid2.jpg/revision/latest?cb=20111208015735",
+      "likes": 141,
+      "id": 9
+    },
+    {
+      "name": "John",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Major_PM_full.jpg/220px-Major_PM_full.jpg",
+      "likes": 3,
+      "id": 10
+    },
+    {
+      "name": "Amalie",
+      "image": "https://cdn.freebiesupply.com/logos/large/2x/amalie-2-logo-png-transparent.png",
+      "likes": -245,
+      "id": 11
+    },
+    {
+      "name": "Barnysaurus",
+      "image": "https://vignette.wikia.nocookie.net/barney/images/c/cd/Barney-0.jpg/revision/latest?cb=20181007005020",
+      "likes": 12,
+      "id": 12
+    },
+    {
+      "name": "Barker Bowles",
+      "image": "https://www.biography.com/.image/t_share/MTE4MDAzNDEwNzQ3Mjk1MjQ2/camilla-parker-bowles-9542218-1-402.jpg",
+      "likes": 28,
+      "id": 13
+    },
+    {
+      "name": "Dina",
+      "image": "http://www.iceagemovies.com/share.jpg",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "name": "Steve",
+      "image": "https://vignette.wikia.nocookie.net/terminator/images/4/4c/T-Patrick.jpg/revision/latest?cb=20090924194048",
+      "likes": 0,
+      "id": 15
+    },
+    {
+      "name": "Johnny Hollywood",
+      "image": "https://resizing.flixster.com/8edcxycBpENT1Dklu-NoVPMvAXw=/300x300/v1.cjs0OTE0MDtqOzE3ODY1OzEyMDA7MTg5MzsxOTcw",
+      "likes": 0,
+      "id": 16
     }
   ]
 }
