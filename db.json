@@ -49,16 +49,10 @@
       "likes": 2
     },
     {
-      "name": "test",
+      "name": "HELLO",
       "image": "",
-      "likes": 7,
+      "likes": 0,
       "id": 9
-    },
-    {
-      "name": "test2 ",
-      "image": "",
-      "likes": 1,
-      "id": 10
     }
   ]
 }

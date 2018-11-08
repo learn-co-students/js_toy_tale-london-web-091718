@@ -66,20 +66,38 @@ const updateToyLikes = toy => {
 }
 
 // create new toy button will 1) create new toy 2) add to api 3) render to page
-submitButton.addEventListener('click', event => {
-    event.preventDefault()
+submitButton.addEventListener('click', async event => {
+  event.preventDefault()
+  
   const toy = {
     name: toyNameInput.value,
     image: toyImageInput.value,
     likes: 0
   }
+  state.toys.push(toy)
 
-  addNewToy(toy)
-    .then((toy) => {
-      state.toys.push(toy)
-      renderToy(toy)
-    })
-  
+  await addNewToy(toy)
+  const toys = await getToys()
+  renderToyCollection(toys)
+
   toyNameInput.value = ''
   toyImageInput.value = ''
 })
+
+// submitButton.addEventListener('click', event => {
+//     event.preventDefault()
+//   const toy = {
+//     name: toyNameInput.value,
+//     image: toyImageInput.value,
+//     likes: 0
+//   }
+
+//   addNewToy(toy)
+//     .then((toy) => {
+//       state.toys.push(toy)
+//       renderToy(toy)
+//     })
+  
+//   toyNameInput.value = ''
+//   toyImageInput.value = ''
+// })
