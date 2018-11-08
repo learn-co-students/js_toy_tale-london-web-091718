@@ -9,7 +9,6 @@ const addBtn = document.querySelector('#new-toy-btn')
 const toyFormContainer = document.querySelector('.container')
 const toyCollection = document.querySelector("#toy-collection")
 const toyForm = document.querySelector(".add-toy-form")
-const likeButton = document.querySelector(".like-btn")
 
 // API calls
 getToys = () =>
