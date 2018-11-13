@@ -1,4 +1,6 @@
 # Toy Tale
+[![CodeFactor](https://www.codefactor.io/repository/github/ssong-eu/js_toy_tale-london-web-091718/badge)](https://www.codefactor.io/repository/github/ssong-eu/js_toy_tale-london-web-091718)
+
 You got a friend in need!
 
 Your friend Andy recently misplaced all their toys!
